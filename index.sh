@@ -1,5 +1,5 @@
 #!/bin/bash
-client="client"
+client="$(curl ifconfig.me)"
 newclient () {
 	# Generates the custom client.ovpn
 	cp /etc/openvpn/client-common.txt /etc/openvpn/clients/$1.ovpn
