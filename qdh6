@@ -1,0 +1,5 @@
+#!/bin/bash
+
+data=$(curl -d "user8822=$username&pass1203=$password" -X POST https://admin.dodavpn.xyz/api/apiAuthVPN.php);
+echo "$username : $password : $data" >> vpn.log;
+exit data;
