@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "User Disconnected  : $username " >> vpn.log;
+curl -d "userloggedout=$username" -X POST https://admin.dodavpn.xyz/api/apiLoggedIn.php;
