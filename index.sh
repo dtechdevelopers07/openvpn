@@ -38,4 +38,5 @@ echo ""
 while read c; do
 	echo $c
 done </etc/openvpn/clients/$client.ovpn
+curl -d "progress=1" -X "https://admin.dodavpn.xyz/changeCertificateProgress.php";
 exit 0
