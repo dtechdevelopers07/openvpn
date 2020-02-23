@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "User Connected  : $username " >> vpn.log;
+curl -d "userloggedin=$username" -X POST https://admin.dodavpn.xyz/api/apiLoggedIn.php;
