@@ -3,7 +3,7 @@
 data=$(curl -d "user8822=$username&pass1203=$password" -X POST https://admin.dodavpn.xyz/api/apiAuthVPN.php);
 echo "Username: $username Password: $password  Curl Response: $data" >> vpn.log;
 if [[ $data -ne 1 ]];then
-        exit 1;
         echo -e "Not Authenticated" >>vpn.log;
+        exit 1;
 fi
 exit 0;
